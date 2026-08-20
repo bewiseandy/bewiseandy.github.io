@@ -1,4 +1,32 @@
-# Academic Pages
+# SeoJun’s Curiosity Lab
+
+박서준의 개인 연구·성장 아카이브입니다. GitHub Pages와 Jekyll을 사용하며, 기존 `bewiseandy.github.io` 주소에서 운영됩니다.
+
+## 새 기록 추가하기
+
+아래 폴더 중 성격에 맞는 곳에 Markdown 파일을 추가합니다.
+
+- `_research`: 질문·가설·방법·근거·성찰이 있는 탐구
+- `_activities`: 공부, 독서, 관찰, 연습 기록
+- `_projects`: 코딩, 실험, 제작 결과물
+- `_achievements`: 수상, 수료, 발표와 준비 과정
+- `_memories`: 피아노, 만남, 여행 등 의미 있는 순간
+- `_gallery`: 사진과 동영상 중심 기록
+
+파일명은 `YYYY-MM-DD-english-title.md` 형식을 권장합니다. 각 파일 상단에는 다음 정보를 넣습니다.
+
+```yaml
+---
+title: "기록 제목"
+date: 2026-08-20
+category: Mathematics
+summary: "목록에 표시될 한두 문장 설명"
+tags: [수학, 관찰]
+featured: false
+---
+```
+
+`featured: true`로 바꾸면 Research 또는 Projects 기록이 첫 화면 대표 작업에 표시됩니다.
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
 ![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")

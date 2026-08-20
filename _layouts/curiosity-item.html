@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<main class="lab-article">
+  {% if page.collection == 'activities' %}{% assign collection_url = '/activity-log/' %}{% else %}{% assign collection_url = page.collection | prepend: '/' | append: '/' %}{% endif %}
+  <a class="lab-back" href="{{ collection_url | relative_url }}">← Back to {{ page.collection }}</a>
+  <header><p class="lab-kicker">{{ page.category | default: page.collection }} · {{ page.date | date: "%Y.%m.%d" }}</p><h1>{{ page.title }}</h1>{% if page.summary %}<p class="lab-deck">{{ page.summary }}</p>{% endif %}{% if page.tags %}<div class="lab-tags">{% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}</header>
+  <article class="lab-prose">{{ content }}</article>
+</main>

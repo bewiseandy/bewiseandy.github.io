@@ -1,0 +1,7 @@
+{% assign item = include.item %}
+<article class="lab-card">
+  <p class="lab-card-meta">{{ item.category | default: item.collection }} · {{ item.date | date: "%Y" }}</p>
+  <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+  <p>{{ item.summary | default: item.excerpt | strip_html | truncate: 150 }}</p>
+  {% if item.tags %}<div class="lab-tags">{% for tag in item.tags limit: 3 %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}
+</article>

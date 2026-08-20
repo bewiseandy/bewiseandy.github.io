@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign items = site[page.collection_name] | sort: "date" | reverse %}
+<main class="lab-archive">
+  <header class="lab-page-header"><p class="lab-kicker">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p></header>
+  <div class="lab-filter-note">{{ items | size }} records · newest first</div>
+  <section class="lab-grid">
+    {% for item in items %}{% include curiosity-card.html item=item %}{% else %}<div class="lab-empty">첫 기록을 준비하고 있습니다.</div>{% endfor %}
+  </section>
+</main>
