@@ -4,43 +4,45 @@ layout: compress
 {% include base_path %}
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>{% include head.html %}{% include head/custom.html %}</head>
+  <head>{% include head.html %}{% include head/custom.html %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"></head>
   <body class="andy-profile-page">
-    <div class="andy-shell">
-      <aside class="andy-sidebar">
-        <a class="andy-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
-        <p class="andy-field">Mathematics, Science,<br>Computing, and Curiosity</p>
-        <nav class="andy-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="{{ '/research/' | relative_url }}">Research</a>
-          <a href="{{ '/activity-log/' | relative_url }}">Activity Log</a>
-          <a href="{{ '/projects/' | relative_url }}">Projects</a>
-          <a href="{{ '/achievements/' | relative_url }}">Achievements</a>
-          <a href="{{ '/memories/' | relative_url }}">Memories</a>
-          <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
-          <a href="{{ '/timeline/' | relative_url }}">Timeline</a>
-          <a href="{{ '/archive/' | relative_url }}">Archive</a>
-        </nav>
-        <div class="andy-links"><a href="https://github.com/bewiseandy">GitHub</a><span> · </span><a href="{{ '/archive/' | relative_url }}">All records</a></div>
-      </aside>
+    <input class="andy-menu-toggle" type="checkbox" id="andy-menu-toggle">
+    <header class="andy-topbar">
+      <a class="andy-topbar-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
+      <nav class="andy-desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a>
+      </nav>
+      <label class="andy-menu-button" for="andy-menu-toggle" aria-label="Open menu"><span>☰</span></label>
+    </header>
 
+    <label class="andy-menu-shade" for="andy-menu-toggle" aria-hidden="true"></label>
+    <aside class="andy-drawer">
+      <label class="andy-drawer-close" for="andy-menu-toggle" aria-label="Close menu">×</label>
+      <img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy SeoJun Park">
+      <h1>Andy SeoJun Park</h1>
+      <p>Mathematics, Science,<br>Computing, and Curiosity</p>
+      <nav><a href="#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/activity-log/' | relative_url }}">Activity Log</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a></nav>
+      <div class="andy-drawer-links"><a href="https://github.com/bewiseandy">GitHub</a></div>
+    </aside>
+
+    <div class="andy-page">
       <main class="andy-content">
         <figure class="andy-portrait"><img src="{{ '/images/andy-stanford.jpeg' | relative_url }}" alt="Andy SeoJun Park at Stanford University"></figure>
 
         <section id="about" class="andy-section">
           <h2>About</h2>
-          <p>안녕하세요. 저는 수학, 과학, 코딩을 좋아하고 일상에서 생기는 궁금증을 직접 관찰하고 탐구하는 <strong>Andy SeoJun Park</strong>입니다.</p>
-          <p>이곳에는 완성된 결과만이 아니라 질문이 생긴 이유, 시도한 방법, 생각이 달라진 순간과 다음에 알아보고 싶은 것을 기록합니다. 현재는 초등학교 5학년이지만, 이 아카이브가 대학과 그 이후까지 저의 관심과 성장을 보여주는 긴 연구 기록이 되기를 바랍니다.</p>
-          <p>수학·과학·컴퓨팅 외에도 피아노, 사진, 영상, 여행과 소중한 만남을 기록합니다. 서로 달라 보이는 경험 속에서 새로운 질문과 연결을 발견하는 것에 관심이 있습니다.</p>
+          <p>I am a student who enjoys mathematics, science, and computing, and who likes turning questions from everyday life into things I can observe, test, and understand.</p>
+          <p>This site is a growing record of how I think. I document not only finished results, but also where a question began, what I tried, what changed my mind, and what I would like to investigate next. I am currently in fifth grade, and I hope this archive will continue to grow through university and beyond.</p>
+          <p>Beyond mathematics, science, and code, I also keep selected records of piano, photography, video, travel, and meaningful encounters. I am interested in finding unexpected connections between experiences that may initially seem unrelated.</p>
         </section>
 
         <section class="andy-section">
           <h2>Current Interests</h2>
           <ul class="andy-plain-list">
-            <li><strong>Learning and routines</strong> — 작은 행동이 집중과 공부의 시작에 어떤 영향을 주는지 관찰합니다.</li>
-            <li><strong>Mathematics and patterns</strong> — 규칙을 찾고 여러 방법으로 문제를 설명하는 과정에 관심이 있습니다.</li>
-            <li><strong>Science and experiments</strong> — 예상과 실제 결과가 달라지는 이유를 직접 확인합니다.</li>
-            <li><strong>Computing and making</strong> — 아이디어를 웹과 코드로 구현하며 작동 원리를 배웁니다.</li>
+            <li><strong>Learning and routines</strong> — observing how small actions influence focus and the start of study.</li>
+            <li><strong>Mathematics and patterns</strong> — finding rules and explaining a problem in more than one way.</li>
+            <li><strong>Science and experiments</strong> — testing why an actual result may differ from a prediction.</li>
+            <li><strong>Computing and making</strong> — learning how systems work by turning ideas into code.</li>
           </ul>
         </section>
 
@@ -50,7 +52,7 @@ layout: compress
           <div class="andy-records">
             {% for item in featured limit: 5 %}
               <article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.category }} · {{ item.date | date: "%Y" }}{% if item.tags %} · {{ item.tags | join: ", " }}{% endif %}</p></article>
-            {% else %}<p>첫 연구 기록을 준비하고 있습니다.</p>{% endfor %}
+            {% else %}<p>The first research record is in preparation.</p>{% endfor %}
           </div>
         </section>
 
@@ -58,7 +60,7 @@ layout: compress
           <h2>Recent Notes</h2>
           {% assign recent = site.activities | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
           <div class="andy-records">
-            {% for item in recent limit: 5 %}<article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }} · {{ item.collection }}</p></article>{% else %}<p>활동, 사진과 기억이 이곳에 시간순으로 쌓입니다.</p>{% endfor %}
+            {% for item in recent limit: 5 %}<article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }} · {{ item.collection }}</p></article>{% else %}<p>Activities, photographs, and memories will appear here in chronological order.</p>{% endfor %}
           </div>
         </section>
 
