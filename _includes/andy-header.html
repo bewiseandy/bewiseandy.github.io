@@ -1,0 +1,18 @@
+<input class="andy-menu-toggle" type="checkbox" id="andy-menu-toggle">
+<header class="andy-topbar">
+  <a class="andy-topbar-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
+  <div class="andy-language" aria-label="Language"><button type="button" data-set-lang="en">EN</button><span>/</span><button type="button" data-set-lang="ko">KR</button></div>
+  <nav class="andy-desktop-nav" aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a>
+  </nav>
+  <label class="andy-menu-button" for="andy-menu-toggle" aria-label="Open menu"><span>☰</span></label>
+</header>
+<label class="andy-menu-shade" for="andy-menu-toggle" aria-hidden="true"></label>
+<aside class="andy-drawer">
+  <label class="andy-drawer-close" for="andy-menu-toggle" aria-label="Close menu">×</label>
+  <img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy SeoJun Park">
+  <h1>Andy SeoJun Park</h1>
+  <p><span data-en>Mathematics, Science,<br>Computing, and Curiosity</span><span data-ko>수학, 과학, 컴퓨팅과 호기심</span></p>
+  <nav><a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/activity-log/' | relative_url }}">Activity Log</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a></nav>
+  <div class="andy-drawer-links"><a href="https://github.com/bewiseandy">GitHub</a></div>
+</aside>

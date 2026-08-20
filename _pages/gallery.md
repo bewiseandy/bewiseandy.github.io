@@ -3,6 +3,6 @@ layout: curiosity-archive
 permalink: /gallery/
 title: Gallery
 eyebrow: PHOTOGRAPHS · FILMS · OBSERVATIONS
-description: 사진과 동영상으로 기록한 시선의 변화와 시각적 탐구를 모읍니다.
+description: Photographs and videos that document a changing point of view and visual exploration.
 collection_name: gallery
 ---

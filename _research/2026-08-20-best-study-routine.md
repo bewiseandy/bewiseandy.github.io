@@ -1,34 +1,34 @@
 ---
-title: "베스트 공부 루틴 찾기"
+title: "Finding My Best Study Routine"
 date: 2026-08-20
 category: Learning Science
-summary: "야구선수의 루틴에서 영감을 받아, 공부를 시작하게 만드는 나만의 스위치를 탐구합니다."
-tags: [루틴, 집중, 데이터 기록]
+summary: "Inspired by the routines of baseball players, I investigate the small actions that help switch my mind into study mode."
+tags: [routine, focus, data log]
 featured: true
 ---
 ## Question
 
-같은 공부라도 어떤 날은 바로 집중되고, 어떤 날은 시작하기 어렵습니다. **집중을 시작하게 만드는 행동의 조합이 있을까?**
+Some days I can focus immediately, while on other days it is difficult to begin. **Is there a combination of actions that helps me enter a focused state?**
 
 ## Hypothesis
 
-공부 직전에 책상을 정리하고 2분 동안 지난 내용을 복습하면, 아무 준비 없이 시작할 때보다 집중을 빠르게 시작할 수 있을 것이라고 예상했습니다.
+I predicted that organizing my desk and reviewing the previous lesson for two minutes would help me focus faster than beginning without a routine.
 
 ## Method
 
-- 공부를 시작한 시간과 피로도를 기록합니다.
-- 시작 전에 사용한 루틴을 표시합니다.
-- 집중이 시작되기까지 걸린 시간과 공부 후 느낌을 기록합니다.
-- 여러 날의 결과를 비교해 나에게 잘 맞는 조건을 찾습니다.
+- Record the starting time and level of tiredness.
+- Mark the routine used before studying.
+- Record the time required to focus and how the session felt afterward.
+- Compare results across multiple days to identify useful conditions.
 
 ## Evidence
 
-아직 자료를 모으는 중입니다. 기록이 쌓이면 표와 그래프로 비교할 예정입니다.
+Data collection is still in progress. When enough records have accumulated, I will compare them using a table and graph.
 
 ## Reflection
 
-좋은 루틴은 무조건 길고 거창한 계획이 아니라, 공부를 시작하기 쉽게 만드는 작은 행동일 수 있습니다.
+A useful routine may not be long or complicated. It may simply be a small action that makes studying easier to begin.
 
 ## Next Question
 
-피로도와 공부 과목이 달라져도 같은 루틴이 효과가 있을까요?
+Will the same routine remain effective when my tiredness and study subject change?

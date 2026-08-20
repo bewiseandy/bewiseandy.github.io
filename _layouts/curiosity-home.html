@@ -6,34 +6,16 @@ layout: compress
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>{% include head.html %}{% include head/custom.html %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"></head>
   <body class="andy-profile-page">
-    <input class="andy-menu-toggle" type="checkbox" id="andy-menu-toggle">
-    <header class="andy-topbar">
-      <a class="andy-topbar-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
-      <nav class="andy-desktop-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a>
-      </nav>
-      <label class="andy-menu-button" for="andy-menu-toggle" aria-label="Open menu"><span>☰</span></label>
-    </header>
-
-    <label class="andy-menu-shade" for="andy-menu-toggle" aria-hidden="true"></label>
-    <aside class="andy-drawer">
-      <label class="andy-drawer-close" for="andy-menu-toggle" aria-label="Close menu">×</label>
-      <img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy SeoJun Park">
-      <h1>Andy SeoJun Park</h1>
-      <p>Mathematics, Science,<br>Computing, and Curiosity</p>
-      <nav><a href="#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/activity-log/' | relative_url }}">Activity Log</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a></nav>
-      <div class="andy-drawer-links"><a href="https://github.com/bewiseandy">GitHub</a></div>
-    </aside>
+    {% include andy-header.html %}
 
     <div class="andy-page">
       <main class="andy-content">
         <figure class="andy-portrait"><img src="{{ '/images/andy-stanford.jpeg' | relative_url }}" alt="Andy SeoJun Park at Stanford University"></figure>
 
         <section id="about" class="andy-section">
-          <h2>About</h2>
-          <p>I am a student who enjoys mathematics, science, and computing, and who likes turning questions from everyday life into things I can observe, test, and understand.</p>
-          <p>This site is a growing record of how I think. I document not only finished results, but also where a question began, what I tried, what changed my mind, and what I would like to investigate next. I am currently in fifth grade, and I hope this archive will continue to grow through university and beyond.</p>
-          <p>Beyond mathematics, science, and code, I also keep selected records of piano, photography, video, travel, and meaningful encounters. I am interested in finding unexpected connections between experiences that may initially seem unrelated.</p>
+          <h2><span data-en>About</span><span data-ko>소개</span></h2>
+          <div data-en><p>I am a student who enjoys mathematics, science, and computing, and who likes turning questions from everyday life into things I can observe, test, and understand.</p><p>This site is a growing record of how I think. I document not only finished results, but also where a question began, what I tried, what changed my mind, and what I would like to investigate next. I am currently in fifth grade, and I hope this archive will continue to grow through university and beyond.</p><p>Beyond mathematics, science, and code, I also keep selected records of piano, photography, video, travel, and meaningful encounters. I am interested in finding unexpected connections between experiences that may initially seem unrelated.</p></div>
+          <div data-ko><p>저는 수학, 과학, 컴퓨팅을 좋아하며 일상에서 발견한 질문을 직접 관찰하고 시험하며 이해하는 학생입니다.</p><p>이 사이트는 제가 어떻게 생각하고 성장하는지를 기록하는 공간입니다. 완성된 결과뿐 아니라 질문의 시작, 시도한 방법, 생각이 바뀐 순간과 다음 탐구도 함께 남깁니다.</p><p>피아노, 사진, 영상, 여행과 소중한 만남도 선별하여 기록하며 서로 달라 보이는 경험 사이의 새로운 연결을 찾고 있습니다.</p></div>
         </section>
 
         <section class="andy-section">
@@ -71,6 +53,6 @@ layout: compress
         <footer class="andy-footer">© Andy SeoJun Park · Built as a growing record of curiosity.</footer>
       </main>
     </div>
-    {% include scripts.html %}
+    {% include scripts.html %}<script src="{{ '/assets/js/language-toggle.js' | relative_url }}"></script>
   </body>
 </html>
