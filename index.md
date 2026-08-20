@@ -1,5 +1,5 @@
 ---
 layout: curiosity-home
-title: "SeoJun’s Curiosity Lab"
+title: "Andy SeoJun Park"
 permalink: /
 ---

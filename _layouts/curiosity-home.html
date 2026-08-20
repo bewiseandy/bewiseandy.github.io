@@ -1,49 +1,74 @@
 ---
-layout: default
+layout: compress
 ---
-<main class="lab-home">
-  <section class="lab-hero">
-    <p class="lab-kicker">SEOJUN’S CURIOSITY LAB · EST. 2026</p>
-    <h1>Questions become experiments.<br><em>Experiments become growth.</em></h1>
-    <p class="lab-intro">수학, 과학, 코딩, 음악과 일상에서 만난 질문을 관찰하고 직접 시험하며 기록합니다. 완성된 결과뿐 아니라 생각이 바뀐 순간과 다음 질문까지 남기는 성장 아카이브입니다.</p>
-    <div class="lab-actions">
-      <a class="lab-button lab-button--primary" href="{{ '/research/' | relative_url }}">Explore research</a>
-      <a class="lab-button" href="{{ '/timeline/' | relative_url }}">View timeline</a>
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>{% include head.html %}{% include head/custom.html %}</head>
+  <body class="andy-profile-page">
+    <div class="andy-shell">
+      <aside class="andy-sidebar">
+        <a class="andy-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
+        <p class="andy-field">Mathematics, Science,<br>Computing, and Curiosity</p>
+        <nav class="andy-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="{{ '/research/' | relative_url }}">Research</a>
+          <a href="{{ '/activity-log/' | relative_url }}">Activity Log</a>
+          <a href="{{ '/projects/' | relative_url }}">Projects</a>
+          <a href="{{ '/achievements/' | relative_url }}">Achievements</a>
+          <a href="{{ '/memories/' | relative_url }}">Memories</a>
+          <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+          <a href="{{ '/timeline/' | relative_url }}">Timeline</a>
+          <a href="{{ '/archive/' | relative_url }}">Archive</a>
+        </nav>
+        <div class="andy-links"><a href="https://github.com/bewiseandy">GitHub</a><span> · </span><a href="{{ '/archive/' | relative_url }}">All records</a></div>
+      </aside>
+
+      <main class="andy-content">
+        <figure class="andy-portrait"><img src="{{ '/images/andy-stanford.jpeg' | relative_url }}" alt="Andy SeoJun Park at Stanford University"></figure>
+
+        <section id="about" class="andy-section">
+          <h2>About</h2>
+          <p>안녕하세요. 저는 수학, 과학, 코딩을 좋아하고 일상에서 생기는 궁금증을 직접 관찰하고 탐구하는 <strong>Andy SeoJun Park</strong>입니다.</p>
+          <p>이곳에는 완성된 결과만이 아니라 질문이 생긴 이유, 시도한 방법, 생각이 달라진 순간과 다음에 알아보고 싶은 것을 기록합니다. 현재는 초등학교 5학년이지만, 이 아카이브가 대학과 그 이후까지 저의 관심과 성장을 보여주는 긴 연구 기록이 되기를 바랍니다.</p>
+          <p>수학·과학·컴퓨팅 외에도 피아노, 사진, 영상, 여행과 소중한 만남을 기록합니다. 서로 달라 보이는 경험 속에서 새로운 질문과 연결을 발견하는 것에 관심이 있습니다.</p>
+        </section>
+
+        <section class="andy-section">
+          <h2>Current Interests</h2>
+          <ul class="andy-plain-list">
+            <li><strong>Learning and routines</strong> — 작은 행동이 집중과 공부의 시작에 어떤 영향을 주는지 관찰합니다.</li>
+            <li><strong>Mathematics and patterns</strong> — 규칙을 찾고 여러 방법으로 문제를 설명하는 과정에 관심이 있습니다.</li>
+            <li><strong>Science and experiments</strong> — 예상과 실제 결과가 달라지는 이유를 직접 확인합니다.</li>
+            <li><strong>Computing and making</strong> — 아이디어를 웹과 코드로 구현하며 작동 원리를 배웁니다.</li>
+          </ul>
+        </section>
+
+        <section class="andy-section">
+          <h2>Selected Research & Projects</h2>
+          {% assign featured = site.research | concat: site.projects | where: "featured", true | sort: "date" | reverse %}
+          <div class="andy-records">
+            {% for item in featured limit: 5 %}
+              <article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.category }} · {{ item.date | date: "%Y" }}{% if item.tags %} · {{ item.tags | join: ", " }}{% endif %}</p></article>
+            {% else %}<p>첫 연구 기록을 준비하고 있습니다.</p>{% endfor %}
+          </div>
+        </section>
+
+        <section class="andy-section">
+          <h2>Recent Notes</h2>
+          {% assign recent = site.activities | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
+          <div class="andy-records">
+            {% for item in recent limit: 5 %}<article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }} · {{ item.collection }}</p></article>{% else %}<p>활동, 사진과 기억이 이곳에 시간순으로 쌓입니다.</p>{% endfor %}
+          </div>
+        </section>
+
+        <section class="andy-section andy-photo-strip">
+          <h2>Places that sparked curiosity</h2>
+          <div><img src="{{ '/images/andy-intel.jpeg' | relative_url }}" alt="Andy at Intel"><img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy at Google"><img src="{{ '/images/andy-grand-canyon.jpeg' | relative_url }}" alt="Andy at the Grand Canyon"></div>
+        </section>
+        <footer class="andy-footer">© Andy SeoJun Park · Built as a growing record of curiosity.</footer>
+      </main>
     </div>
-  </section>
-
-  <section class="lab-statement">
-    <p class="lab-section-label">Research statement</p>
-    <h2>I am learning how to ask better questions.</h2>
-    <p>저는 정답을 빨리 찾는 것보다, 좋은 질문을 만들고 근거를 모아 생각을 고쳐 나가는 과정에 관심이 있습니다. 작은 호기심도 기록하면 더 큰 탐구의 출발점이 될 수 있다고 믿습니다.</p>
-  </section>
-
-  <section class="lab-section">
-    <div class="lab-section-head"><div><p class="lab-section-label">Selected work</p><h2>Featured research & projects</h2></div><a href="{{ '/archive/' | relative_url }}">View all →</a></div>
-    <div class="lab-grid lab-grid--featured">
-      {% assign featured = site.research | concat: site.projects | where: "featured", true | sort: "date" | reverse %}
-      {% for item in featured limit: 4 %}
-        {% include curiosity-card.html item=item %}
-      {% else %}
-        <article class="lab-card lab-card--empty"><span>01</span><h3>The first question is waiting.</h3><p>첫 탐구 기록이 올라오면 이곳에 대표 연구로 소개됩니다.</p></article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="lab-section lab-section--split">
-    <div><p class="lab-section-label">Now exploring</p><h2>현재의 호기심</h2><p>공부를 시작하게 만드는 나만의 ‘스위치’는 무엇일까? 야구선수의 루틴에서 영감을 받아 시간·장소·행동에 따른 집중 변화를 관찰하고 있습니다.</p><a class="lab-text-link" href="{{ '/research/best-study-routine/' | relative_url }}">연구 노트 읽기 →</a></div>
-    <div class="lab-quote"><p>“A portfolio should show not only what I made, but how I learned to think.”</p><span>— Lab note</span></div>
-  </section>
-
-  <section class="lab-section">
-    <div class="lab-section-head"><div><p class="lab-section-label">Recent notes</p><h2>Latest from the lab</h2></div><a href="{{ '/activity-log/' | relative_url }}">Activity log →</a></div>
-    <div class="lab-list">
-      {% assign recent = site.activities | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
-      {% for item in recent limit: 5 %}
-        <a href="{{ item.url | relative_url }}"><time>{{ item.date | date: "%Y.%m.%d" }}</time><strong>{{ item.title }}</strong><span>{{ item.category | default: item.collection | capitalize }}</span></a>
-      {% else %}
-        <div class="lab-empty">새로운 활동과 기억이 시간순으로 쌓이는 공간입니다.</div>
-      {% endfor %}
-    </div>
-  </section>
-</main>
+    {% include scripts.html %}
+  </body>
+</html>

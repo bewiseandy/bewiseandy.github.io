@@ -105,3 +105,37 @@ body { color:var(--lab-ink); background:#fff; }
   .lab-list a { grid-template-columns:90px 1fr; }
   .lab-list span { display:none; }
 }
+
+/* Beery-inspired academic profile homepage */
+.andy-profile-page { margin:0; background:#fff; color:#333; font-family:Arial,"Noto Sans KR",sans-serif; font-size:14px; line-height:1.55; }
+.andy-shell { display:grid; grid-template-columns:260px minmax(0,760px); gap:54px; width:min(1080px,calc(100% - 48px)); margin:0 auto; padding:48px 0 64px; }
+.andy-sidebar { position:sticky; top:36px; align-self:start; }
+.andy-name { display:block; color:#222!important; font-size:24px; font-weight:700; line-height:1.15; text-decoration:none!important; }
+.andy-field { margin:8px 0 23px; color:#555; font-size:14px; line-height:1.45; }
+.andy-nav { display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.andy-nav a,.andy-links a { color:#4f7794!important; font-size:13px; text-decoration:none!important; }
+.andy-nav a:hover,.andy-links a:hover,.andy-records a:hover { text-decoration:underline!important; }
+.andy-links { margin-top:22px; color:#aaa; font-size:12px; }
+.andy-content { min-width:0; }
+.andy-portrait { width:100%; height:360px; margin:0 0 30px; overflow:hidden; background:#eee; }
+.andy-portrait img { width:100%; height:100%; object-fit:cover; object-position:center 58%; }
+.andy-section { margin:0 0 32px; scroll-margin-top:24px; }
+.andy-section h2 { margin:0 0 10px; padding-bottom:5px; border-bottom:1px solid #ddd; color:#333; font-family:Arial,"Noto Sans KR",sans-serif; font-size:19px; font-weight:700; }
+.andy-section p { margin:0 0 10px; color:#3f3f3f; font-size:14px; line-height:1.65; }
+.andy-plain-list { margin:0; padding-left:19px; }
+.andy-plain-list li { margin-bottom:7px; font-size:14px; line-height:1.55; }
+.andy-records article { margin:0 0 15px; }
+.andy-records h3 { margin:0 0 3px; font-family:Arial,"Noto Sans KR",sans-serif; font-size:15px; line-height:1.4; }
+.andy-records h3 a { color:#3e708f; text-decoration:none; }
+.andy-records p { margin:0 0 2px; }
+.andy-records .andy-meta { color:#777; font-size:12px; }
+.andy-photo-strip>div { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.andy-photo-strip img { width:100%; height:145px; object-fit:cover; object-position:center; }
+.andy-footer { margin-top:45px; padding-top:15px; border-top:1px solid #ddd; color:#888; font-size:11px; }
+@media (max-width:760px) {
+  .andy-shell { display:block; width:calc(100% - 36px); padding-top:25px; }
+  .andy-sidebar { position:static; margin-bottom:25px; }
+  .andy-nav { flex-direction:row; flex-wrap:wrap; gap:5px 14px; margin-top:15px; }
+  .andy-portrait { height:280px; }
+  .andy-photo-strip img { height:105px; }
+}

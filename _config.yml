@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "ko-KR"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "SeoJun’s Curiosity Lab"
+title                    : "Andy SeoJun Park"
 title_separator          : "-"
-name                     : &name "Park SeoJun"
-description              : &description "Questions, experiments, projects, and the record of growing up curious."
+name                     : &name "Andy SeoJun Park"
+description              : &description "Student explorer in mathematics, science, computing, music, and the questions found in everyday life."
 url                      : https://bewiseandy.github.io
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,11 +24,11 @@ repository               : "bewiseandy/bewiseandy.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Park SeoJun"
+  name             : "Andy SeoJun Park"
   pronouns         : # example: "she/her"  
-  bio              : "Student researcher exploring mathematics, science, code, music, and everyday questions."
+  bio              : "Mathematics, Science, Computing, and Curiosity"
   location         : "Gunsan, Korea"
-  employer         : "SeoJun’s Curiosity Lab"
+  employer         : "Curiosity Lab"
   uri              : # URL
   email            :
 
