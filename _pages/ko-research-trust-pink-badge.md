@@ -34,4 +34,4 @@ E-Ink는 화면이 바뀔 때 주로 전력을 사용하고 마지막 이미지�
 
 발명은 기술이 작동하는지만이 아니라 사용자가 어떻게 느낄지도 고려해야 한다는 점을 배웠습니다. 실제 제품에는 정확한 날짜 관리, 임의 초기화 방지, 더 작고 가벼운 외형, 개인정보 보호와 발급 절차에 관한 추가 설계가 필요합니다.
 
-<aside class="project-award"><span>수상</span><strong>은상</strong><p>강동송파교육지원청 · 2025</p></aside>
+<aside class="project-award"><span>수상</span><strong>은상</strong><p><a href="https://ssei.sen.go.kr/" target="_blank" rel="noopener noreferrer">제46회 서울학생과학발명품경진대회</a> · 2025</p></aside>

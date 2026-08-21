@@ -14,7 +14,7 @@ alternate_label: English
 
 <p class="project-lead">AI가 만든 사진이 점점 진짜처럼 보이면서 눈으로만 구별하기 어려워지고 있습니다. 팀원들과 함께 사람들이 이 문제에 관심을 갖고, 사진을 믿기 전에 근거를 살펴보도록 돕는 소프트웨어를 탐구했습니다.</p>
 
-<div class="project-facts"><div><span>교육과정</span><strong>서울교대 소프트웨어 영재원</strong></div><div><span>유형</span><strong>심화과정 팀 연구</strong></div><div><span>연도</span><strong>2026</strong></div><div><span>결과물</span><strong>판별 퀴즈 · AI 에이전트</strong></div></div>
+<div class="project-facts"><div><span>교육과정</span><strong><a href="https://talented.snue.ac.kr/" target="_blank" rel="noopener noreferrer">서울교대 소프트웨어 영재원</a></strong></div><div><span>유형</span><strong>심화과정 팀 연구</strong></div><div><span>연도</span><strong>2026</strong></div><div><span>결과물</span><strong>판별 퀴즈 · AI 에이전트</strong></div></div>
 
 ## 탐구 질문
 
@@ -48,4 +48,3 @@ AI 이미지 생성 기술이 계속 바뀌면 고정된 판별 기준만으로�
 - 더 많은 데이터와 통제된 시험 없이는 높은 정확도를 단정할 수 없습니다.
 
 다음 탐구에서는 생성 도구, 제작 연도, 사진 주제와 편집 여부가 달라질 때 성능을 공정하게 비교하고, 에이전트가 판단한 이유를 사용자가 이해하기 쉽게 설명하는 방법을 알아보고 싶습니다.
-

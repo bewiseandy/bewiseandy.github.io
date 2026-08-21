@@ -6,5 +6,4 @@ summary: "Passed the first review and received an Encouragement Award for an AI-
 tags: [Generative AI, Video, Encouragement Award]
 ---
 
-The project documented a complete AI-assisted production process, from research and storyboarding to prompt iteration, scene generation, editing, and publication.
-
+The project documented a complete AI-assisted production process, from research and storyboarding to prompt iteration, scene generation, editing, and publication. [Competition information](https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9)

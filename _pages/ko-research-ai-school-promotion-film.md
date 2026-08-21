@@ -14,7 +14,7 @@ alternate_label: English
 
 <p class="project-lead">서울묘곡초등학교를 소개하는 영상의 주제, 스토리보드, 프롬프트, 생성 장면과 최종 편집을 직접 진행했습니다. 작은 씨앗이 배움과 도전을 거쳐 튼튼한 나무로 자란다는 이야기로 학교생활을 표현했습니다.</p>
 
-<div class="project-facts"><div><span>기간</span><strong>2026.03–06</strong></div><div><span>학년</span><strong>초등 5학년</strong></div><div><span>도구</span><strong>Veo 3 · Nano Banana · CapCut</strong></div><div><span>결과</span><strong>격려상</strong></div></div>
+<div class="project-facts"><div><span>기간</span><strong>2026.03–06</strong></div><div><span>학년</span><strong>초등 5학년</strong></div><div><span>도구</span><strong>Veo 3 · Nano Banana · CapCut</strong></div><div><span>결과</span><strong><a href="https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9" target="_blank" rel="noopener noreferrer">격려상</a></strong></div></div>
 
 <div class="project-video"><iframe src="https://www.youtube-nocookie.com/embed/jvgOLHUsMw4" title="AI 학교 홍보영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
@@ -30,4 +30,4 @@ alternate_label: English
 
 1차 심사를 통과했지만 최종 수상작에는 들지 못했고 격려상을 받았습니다. 결과보다 조사, 기획, 생성, 프롬프트 개선, 편집과 공개까지 전 과정을 직접 경험한 것이 큰 소득이었습니다.
 
-<aside class="project-award"><span>수상</span><strong>격려상</strong><p>제8회 교육 공공데이터 AI 활용대회 · 2026</p></aside>
+<aside class="project-award"><span>수상</span><strong>격려상</strong><p><a href="https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9" target="_blank" rel="noopener noreferrer">제8회 교육 공공데이터 AI 활용대회</a> · 2026</p></aside>

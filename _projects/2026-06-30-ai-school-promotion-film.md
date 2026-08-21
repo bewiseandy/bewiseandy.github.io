@@ -10,6 +10,7 @@ summary_ko: "Veo 3, Nano Banana와 CapCut으로 기획·생성·편집하여 제
 tags: [Veo 3, Nano Banana, CapCut, Storytelling]
 featured: true
 award: "Encouragement Award"
+competition_url: "https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9"
 video: "https://www.youtube.com/watch?v=jvgOLHUsMw4"
 image: "/images/projects/ai-school-promo/research-thumbnail.jpeg"
 permalink: /research/ai-school-promotion-film/
@@ -23,7 +24,7 @@ alternate_url: /ko/research/ai-school-promotion-film/
   <div><span>Period</span><strong>March-June 2026</strong></div>
   <div><span>Grade</span><strong>5</strong></div>
   <div><span>Tools</span><strong>Veo 3 · Nano Banana · CapCut</strong></div>
-  <div><span>Recognition</span><strong>Encouragement Award</strong></div>
+  <div><span>Recognition</span><strong><a href="https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9" target="_blank" rel="noopener noreferrer">Encouragement Award</a></strong></div>
 </div>
 
 <div class="project-video"><iframe src="https://www.youtube-nocookie.com/embed/jvgOLHUsMw4" title="AI-powered Seoul Myogok Elementary School promotional film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
@@ -69,4 +70,4 @@ For a future version, I would work with classmates, plan character and visual co
 
 <figure class="project-figure project-figure--wide"><img src="{{ '/images/projects/ai-school-promo/message-and-reflection.png' | relative_url }}" alt="Final message and reflection from the school promotion film project"><figcaption>The final message connects learning, growth, challenge, and a shared future.</figcaption></figure>
 
-<aside class="project-award"><span>Recognition</span><strong>Encouragement Award</strong><p>8th Education Public Data AI Competition · 2026</p></aside>
+<aside class="project-award"><span>Recognition</span><strong>Encouragement Award</strong><p><a href="https://data.edmgr.kr/board/boardDetailView.do?id=92&board_type_id=9" target="_blank" rel="noopener noreferrer">8th Education Public Data AI Competition</a> · 2026</p></aside>

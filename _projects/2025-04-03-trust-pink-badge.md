@@ -9,7 +9,8 @@ summary: "An Arduino and E-Ink prototype designed to show a pregnancy support ba
 summary_ko: "Arduino와 E-Ink를 이용해 임산부 배려 배지의 유효기간을 조용하고 낮은 전력으로 표시한 발명 프로젝트입니다."
 tags: [E-Ink, Arduino, Human-Centered Design]
 featured: true
-award: "Silver Award, Gangdong-Songpa District Office of Education"
+award: "Silver Award, 46th Seoul Student Science Invention Competition"
+competition_url: "https://ssei.sen.go.kr/"
 image: "/images/projects/trust-pink-badge/research-thumbnail-v2.jpeg"
 permalink: /research/trust-pink-badge/
 permalink_ko: /ko/research/trust-pink-badge/
@@ -80,4 +81,4 @@ This project taught me that an invention should consider not only whether a tech
 
 The prototype demonstrated its concept using a ten-second software timer rather than a real calendar date. A practical version would need secure activation, accurate date management, protection against unauthorized reset, a smaller and lighter enclosure, and testing with intended users. It would also require careful consideration of privacy and the administrative process for issuing and renewing a badge.
 
-<aside class="project-award"><span>Recognition</span><strong>Silver Award</strong><p>Gangdong-Songpa District Office of Education · 2025</p></aside>
+<aside class="project-award"><span>Recognition</span><strong>Silver Award</strong><p><a href="https://ssei.sen.go.kr/" target="_blank" rel="noopener noreferrer">46th Seoul Student Science Invention Competition</a> · 2025</p></aside>

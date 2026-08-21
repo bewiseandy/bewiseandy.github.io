@@ -17,7 +17,7 @@ alternate_url: /ko/research/ai-image-detective/
 
 <p class="project-lead">AI-generated images are becoming increasingly realistic. Our team explored how software could help people notice the problem, practise critical judgment, and examine evidence before trusting an image.</p>
 
-<div class="project-facts"><div><span>Program</span><strong>SNUE Software Gifted Education</strong></div><div><span>Type</span><strong>Advanced-course team research</strong></div><div><span>Year</span><strong>2026</strong></div><div><span>Output</span><strong>Quiz · AI detection agent</strong></div></div>
+<div class="project-facts"><div><span>Program</span><strong><a href="https://talented.snue.ac.kr/" target="_blank" rel="noopener noreferrer">SNUE Software Gifted Education</a></strong></div><div><span>Type</span><strong>Advanced-course team research</strong></div><div><span>Year</span><strong>2026</strong></div><div><span>Output</span><strong>Quiz · AI detection agent</strong></div></div>
 
 ## Research Question
 
@@ -55,4 +55,3 @@ Because image-generation tools keep changing, a fixed detector can become less u
 ## Limitations and Next Question
 
 The prototype and presentation describe a promising workflow, but broader datasets and controlled testing are needed before making strong accuracy claims. Our next question is how to test performance fairly across different generators, image years, subjects, and editing conditions while showing users why the agent reached its conclusion.
-
