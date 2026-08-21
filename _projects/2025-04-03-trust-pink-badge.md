@@ -6,7 +6,7 @@ summary: "An Arduino and E-Ink prototype designed to show a pregnancy support ba
 tags: [E-Ink, Arduino, Human-Centered Design]
 featured: true
 award: "Silver Award, Gangdong-Songpa District Office of Education"
-image: "/images/projects/trust-pink-badge/research-thumbnail.jpg"
+image: "/images/projects/trust-pink-badge/research-thumbnail-v2.jpeg"
 permalink: /research/trust-pink-badge/
 ---
 
