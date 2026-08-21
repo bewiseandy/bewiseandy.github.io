@@ -2,7 +2,7 @@
 title: "Trust Pink Badge: A Time-Limited E-Ink Badge for Pregnancy Support"
 title_ko: "핑크뱃지: 유효기간을 표시하는 E-Ink 임산부 배려 배지"
 date: 2025-04-03
-portfolio_order: 10
+portfolio_order: 20
 category: Student Invention Project
 category_ko: 학생 과학발명 프로젝트
 summary: "An Arduino and E-Ink prototype designed to show a pregnancy support badge's valid period while using very little continuous power."

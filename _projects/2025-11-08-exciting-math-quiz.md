@@ -2,7 +2,7 @@
 title: "Exciting Math Quiz: A Level-Based Learning Application"
 title_ko: "수학도우미: 수준별 수학 학습 프로그램"
 date: 2025-11-08
-portfolio_order: 20
+portfolio_order: 10
 category: Independent Research Project
 category_ko: 서울교대 소프트웨어영재원 개인 탐구
 summary: "An Entry-based quiz application exploring whether level-appropriate questions and immediate feedback could make mathematics practice more engaging."
