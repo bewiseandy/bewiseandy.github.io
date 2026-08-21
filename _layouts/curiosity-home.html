@@ -79,7 +79,8 @@ layout: compress
           {% assign all_items = site.research | concat: site.projects | concat: site.activities | concat: site.achievements | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
           <div class="andy-archive-list">{% for item in all_items %}<div><time>{{ item.date | date: "%Y.%m.%d" }}</time><strong>{{ item.title }}</strong><span>{% if item.collection == 'projects' %}Research{% else %}{{ item.collection | capitalize }}{% endif %}</span></div>{% endfor %}</div>
         </section>
-        <footer class="andy-footer">© Andy SeoJun Park · Built as a growing record of curiosity.</footer>
+        <figure class="andy-closing-photo"><img src="{{ '/images/andy-grand-canyon.jpeg' | relative_url }}" alt="Andy at the Grand Canyon"></figure>
+        <footer class="andy-footer">© Andy SeoJun Park. All rights reserved.</footer>
       </main>
       {% include andy-desktop-panel.html %}
     </div>

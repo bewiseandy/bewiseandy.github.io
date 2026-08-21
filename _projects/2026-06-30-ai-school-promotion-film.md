@@ -7,7 +7,7 @@ tags: [Veo 3, Nano Banana, CapCut, Storytelling]
 featured: true
 award: "Encouragement Award"
 video: "https://www.youtube.com/watch?v=jvgOLHUsMw4"
-image: "/images/projects/ai-school-promo/cover.png"
+image: "/images/projects/ai-school-promo/research-thumbnail.jpeg"
 permalink: /research/ai-school-promotion-film/
 ---
 
