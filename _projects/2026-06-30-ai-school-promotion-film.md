@@ -1,14 +1,20 @@
 ---
 title: "From a Small Seed to a Strong Tree: An AI-Powered School Promotion Film"
+title_ko: "작은 씨앗에서 튼튼한 나무로: AI 학교 홍보영상"
 date: 2026-06-30
+portfolio_order: 30
 category: Generative AI Video Project
+category_ko: 생성형 AI 영상 프로젝트
 summary: "A school promotion film planned, generated, and edited with Veo 3, Nano Banana, and CapCut for the 8th Education Public Data AI Competition."
+summary_ko: "Veo 3, Nano Banana와 CapCut으로 기획·생성·편집하여 제8회 교육 공공데이터 AI 활용대회에 출품한 학교 홍보영상입니다."
 tags: [Veo 3, Nano Banana, CapCut, Storytelling]
 featured: true
 award: "Encouragement Award"
 video: "https://www.youtube.com/watch?v=jvgOLHUsMw4"
 image: "/images/projects/ai-school-promo/research-thumbnail.jpeg"
 permalink: /research/ai-school-promotion-film/
+permalink_ko: /ko/research/ai-school-promotion-film/
+alternate_url: /ko/research/ai-school-promotion-film/
 ---
 
 <p class="project-lead">I created an AI-assisted promotional film for Seoul Myogok Elementary School, developing the concept, storyboard, prompts, generated scenes, and final edit. The film presents school life as a journey from a small seed to learning, challenge, and strong growth.</p>

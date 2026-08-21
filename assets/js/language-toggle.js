@@ -11,12 +11,21 @@
   }
   document.addEventListener('click', function (event) {
     var button = event.target.closest('[data-set-lang]');
-    if (button) applyLanguage(button.getAttribute('data-set-lang'));
+    if (button) {
+      var requested = button.getAttribute('data-set-lang');
+      var detail = document.querySelector('.lab-article[data-page-lang][data-alt-url]');
+      if (detail && requested !== detail.getAttribute('data-page-lang')) {
+        window.location.href = detail.getAttribute('data-alt-url');
+        return;
+      }
+      applyLanguage(requested);
+    }
     var menuLink = event.target.closest('.andy-drawer a');
     if (menuLink) {
       var menuToggle = document.getElementById('andy-menu-toggle');
       if (menuToggle) menuToggle.checked = false;
     }
   });
-  applyLanguage(selected);
+  var detailPage = document.querySelector('.lab-article[data-page-lang]');
+  applyLanguage(detailPage ? detailPage.getAttribute('data-page-lang') : selected);
 }());

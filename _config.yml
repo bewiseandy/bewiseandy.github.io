@@ -246,6 +246,9 @@ collections:
   research:
     output: true
     permalink: /research/:path/
+  reading:
+    output: true
+    permalink: /reading/:path/
   activities:
     output: true
     permalink: /activity-log/:path/
@@ -301,6 +304,10 @@ defaults:
     values: &curiosity_item
       layout: curiosity-item
       author_profile: false
+  - scope:
+      path: ""
+      type: reading
+    values: *curiosity_item
   - scope:
       path: ""
       type: activities

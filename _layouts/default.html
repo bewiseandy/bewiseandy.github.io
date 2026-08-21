@@ -15,16 +15,9 @@ layout: compress
   <body>
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% include andy-header.html %}
 
     <div class="andy-detail-shell"><div class="andy-detail-main">{{ content }}</div>{% include andy-desktop-panel.html %}</div>
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
 
     {% include scripts.html %}
     <script src="{{ '/assets/js/language-toggle.js' | relative_url }}"></script>

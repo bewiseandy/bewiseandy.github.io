@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<main class="lab-article">
-  {% if page.collection == 'activities' %}{% assign collection_url = '/#activity-log' %}{% assign collection_label = 'Activity Log' %}{% elsif page.collection == 'projects' or page.collection == 'research' %}{% assign collection_url = '/#research' %}{% assign collection_label = 'Research' %}{% else %}{% assign collection_url = '/' | append: '#' | append: page.collection %}{% assign collection_label = page.collection | capitalize %}{% endif %}
-  <a class="lab-back" href="{{ collection_url | relative_url }}">← Back to {{ collection_label }}</a>
+<main class="lab-article" data-page-lang="{% if page.permalink contains '/ko/' %}ko{% else %}en{% endif %}"{% if page.alternate_url %} data-alt-url="{{ page.alternate_url | relative_url }}"{% endif %}>
+  {% if page.collection_url %}{% assign collection_url = page.collection_url %}{% assign collection_label = page.collection_label %}{% elsif page.collection == 'activities' %}{% assign collection_url = '/#activity-log' %}{% assign collection_label = 'Activity Log' %}{% elsif page.collection == 'projects' or page.collection == 'research' %}{% assign collection_url = '/#research' %}{% assign collection_label = 'Research' %}{% else %}{% assign collection_url = '/' | append: '#' | append: page.collection %}{% assign collection_label = page.collection | capitalize %}{% endif %}
+  <div class="lab-detail-tools"><a class="lab-back" href="{{ collection_url | relative_url }}">← {{ page.back_label | default: 'Back to Research' }}</a>{% if page.alternate_url %}<a class="lab-language-link" href="{{ page.alternate_url | relative_url }}">{{ page.alternate_label | default: '한국어' }}</a>{% endif %}</div>
   <header><p class="lab-kicker">{{ page.category | default: page.collection }} · {{ page.date | date: "%Y.%m.%d" }}</p><h1>{{ page.title }}</h1>{% if page.summary %}<p class="lab-deck">{{ page.summary }}</p>{% endif %}{% if page.tags %}<div class="lab-tags">{% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}</header>
   <article class="lab-prose">{{ content }}</article>
 </main>

@@ -1,13 +1,19 @@
 ---
 title: "Exciting Math Quiz: A Level-Based Learning Application"
+title_ko: "수학도우미: 수준별 수학 학습 프로그램"
 date: 2025-11-08
+portfolio_order: 20
 category: Independent Research Project
+category_ko: 서울교대 소프트웨어영재원 개인 탐구
 summary: "An Entry-based quiz application exploring whether level-appropriate questions and immediate feedback could make mathematics practice more engaging."
+summary_ko: "학년별 문제 선택과 즉각적인 풀이 피드백이 수학 연습의 흥미를 높일 수 있는지 살펴본 Entry 기반 프로그램입니다."
 tags: [Entry, Mathematics Education, User Testing]
 featured: true
 program: "Seoul National University of Education Software Gifted Education Program"
-image: "/images/projects/exciting-math-quiz/interface-and-levels.png"
+image: "/images/projects/exciting-math-quiz/math-helper-thumbnail.png"
 permalink: /research/exciting-math-quiz/
+permalink_ko: /ko/research/exciting-math-quiz/
+alternate_url: /ko/research/exciting-math-quiz/
 ---
 
 <p class="project-lead">I built a level-based mathematics quiz application with Entry to explore a simple question: can practice feel more approachable when learners choose an appropriate level, receive a score, and see an explanation immediately?</p>

@@ -35,14 +35,27 @@ layout: compress
 
         <section id="research" class="andy-section andy-one-page-section">
           <h2>Research</h2>
-          {% assign research_items = site.research | concat: site.projects | sort: "date" | reverse %}
+          {% assign research_items = site.research | concat: site.projects | sort: "portfolio_order" | reverse %}
           <div class="andy-research-list">
           {% for item in research_items %}
             <article id="{{ item.title | slugify }}" class="andy-research-row{% unless item.image %} andy-research-row--text{% endunless %}">
               {% if item.image %}<a class="andy-research-thumb" href="{{ item.url | relative_url }}"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}"></a>{% endif %}
-              <div><p class="andy-work-meta">{{ item.category }} · {{ item.date | date: "%Y" }}</p><h3>{{ item.title }}</h3><p>{{ item.summary }}</p><p class="andy-research-links"><a href="{{ item.url | relative_url }}">Details</a>{% if item.video %}<a href="{{ item.video }}">Video</a>{% endif %}</p></div>
+              <div><p class="andy-work-meta"><span data-en>{{ item.category }}</span><span data-ko>{{ item.category_ko | default: item.category }}</span> · {{ item.date | date: "%Y" }}</p><h3><span data-en>{{ item.title }}</span><span data-ko>{{ item.title_ko | default: item.title }}</span></h3><p><span data-en>{{ item.summary }}</span><span data-ko>{{ item.summary_ko | default: item.summary }}</span></p><p class="andy-research-links"><a data-en href="{{ item.url | relative_url }}">Details</a><a data-ko href="{{ item.permalink_ko | default: item.url | relative_url }}">자세히 보기</a>{% if item.app_url %}<a href="{{ item.app_url }}" target="_blank" rel="noopener noreferrer"><span data-en>Try the App</span><span data-ko>앱 실행</span></a>{% endif %}{% if item.video %}<a href="{{ item.video }}"><span data-en>Video</span><span data-ko>영상</span></a>{% endif %}</p></div>
             </article>
           {% else %}<p>The first research record is in preparation.</p>{% endfor %}
+          </div>
+        </section>
+
+        <section id="reading" class="andy-section andy-one-page-section">
+          <h2><span data-en>Reading &amp; Book Notes</span><span data-ko>독서와 독서탐구</span></h2>
+          {% assign reading_items = site.reading | sort: "date" | reverse %}
+          <div class="andy-research-list">
+          {% for item in reading_items %}
+            <article class="andy-research-row">
+              <a class="andy-research-thumb" href="{{ item.url | relative_url }}"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}"></a>
+              <div><p class="andy-work-meta"><span data-en>{{ item.author }} · {{ item.date | date: "%Y" }}</span><span data-ko>{{ item.author_ko | default: item.author }} · {{ item.date | date: "%Y" }}</span></p><h3><span data-en>{{ item.title }}</span><span data-ko>{{ item.title_ko | default: item.title }}</span></h3><p><span data-en>{{ item.summary }}</span><span data-ko>{{ item.summary_ko | default: item.summary }}</span></p><p class="andy-research-links"><a data-en href="{{ item.url | relative_url }}">Details</a><a data-ko href="{{ item.permalink_ko | default: item.url | relative_url }}">자세히 보기</a></p></div>
+            </article>
+          {% endfor %}
           </div>
         </section>
 
@@ -76,7 +89,7 @@ layout: compress
 
         <section id="archive" class="andy-section andy-one-page-section">
           <h2>Archive</h2>
-          {% assign all_items = site.research | concat: site.projects | concat: site.activities | concat: site.achievements | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
+          {% assign all_items = site.research | concat: site.projects | concat: site.reading | concat: site.activities | concat: site.achievements | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
           <div class="andy-archive-list">{% for item in all_items %}<div><time>{{ item.date | date: "%Y.%m.%d" }}</time><strong>{{ item.title }}</strong><span>{% if item.collection == 'projects' %}Research{% else %}{{ item.collection | capitalize }}{% endif %}</span></div>{% endfor %}</div>
         </section>
         <figure class="andy-closing-photo"><img src="{{ '/images/andy-yosemite.jpeg' | relative_url }}" alt="Yosemite Valley landscape"></figure>
