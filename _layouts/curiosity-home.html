@@ -20,7 +20,32 @@ layout: compress
 
         <section id="education" class="andy-section andy-one-page-section">
           <h2>Education & Programs</h2>
-          <div class="andy-education-item"><time>2025</time><div><h3>Seoul National University of Education</h3><p>Software Gifted Education Program</p><p class="andy-meta">Completed independent software study and developed the Exciting Math Quiz project while enrolled in the program.</p></div></div>
+          <div class="andy-education-list">
+            <article><h3><a href="https://myogok.sen.es.kr" target="_blank" rel="noopener noreferrer">Seoul Myogok Elementary School</a> <span>· 2022–Present</span></h3><div data-en><p>Class President, Grade 3 (2024)<br>Class President, Grade 4 (2025)<br>Class President, Grade 5 (2026)</p></div><div data-ko><p>3학년 학급회장 (2024)<br>4학년 학급회장 (2025)<br>5학년 학급회장 (2026)</p></div></article>
+            <article><h3><a href="https://kangnampridekpi.com/kpi/" target="_blank" rel="noopener noreferrer">KPI Academy</a> <span>· 2019–2021</span></h3></article>
+            <article><h3><a href="https://www.wizisland.com/head/main" target="_blank" rel="noopener noreferrer">Wiz Island</a> <span>· 2017–2018</span></h3></article>
+          </div>
+        </section>
+
+        <section id="learning-journey" class="andy-section andy-one-page-section">
+          <h2><span data-en>Learning Journey</span><span data-ko>학습 여정</span></h2>
+          <div class="andy-learning-list">
+            <article>
+              <h3><span data-en>English</span><span data-ko>영어</span></h3>
+              <div data-en><p>Reading has been the foundation of my English learning since early childhood. My early language programs included <a href="https://www.lexkimjob.com/" target="_blank" rel="noopener noreferrer">Lex Kim</a>, <a href="https://alpha.ikbt.co.kr/main_1.asp" target="_blank" rel="noopener noreferrer">Alpha English</a>, and <a href="https://edisen.co.kr/" target="_blank" rel="noopener noreferrer">Edisen</a>. I currently continue advanced English study at <a href="https://ileschool.com/ileschool/intro.asp" target="_blank" rel="noopener noreferrer">ILE Academy</a>, with an emphasis on sustained reading, comprehension, and academic language.</p></div>
+              <div data-ko><p>어릴 때부터 꾸준한 독서를 영어 학습의 중심에 두었습니다. 초기에는 <a href="https://www.lexkimjob.com/" target="_blank" rel="noopener noreferrer">Lex Kim</a>, <a href="https://alpha.ikbt.co.kr/main_1.asp" target="_blank" rel="noopener noreferrer">Alpha English</a>, <a href="https://edisen.co.kr/" target="_blank" rel="noopener noreferrer">Edisen</a>에서 학습했고, 현재는 <a href="https://ileschool.com/ileschool/intro.asp" target="_blank" rel="noopener noreferrer">ILE어학원</a>에서 독해력과 학술 영어를 발전시키고 있습니다.</p></div>
+            </article>
+            <article>
+              <h3><span data-en>Mathematics</span><span data-ko>수학</span></h3>
+              <div data-en><p>I currently study high-school mathematics at Won Mathematics. Earlier work included advanced problem solving in the S class at <a href="https://fieldsgood.co.kr/" target="_blank" rel="noopener noreferrer">Fields the Classic</a> and middle-school geometry and high-school algebra at <a href="https://acaroad.com/12" target="_blank" rel="noopener noreferrer">Acaroad Blue Diamond</a>. Beginning in fourth grade, I spent one year preparing for the <a href="https://www.kmo.or.kr/" target="_blank" rel="noopener noreferrer">Korean Mathematical Olympiad</a> at PEAKS Academy and sat for the KMO examination.</p></div>
+              <div data-ko><p>현재 원수학에서 고등학교 수학을 공부하고 있습니다. 이전에는 <a href="https://fieldsgood.co.kr/" target="_blank" rel="noopener noreferrer">필즈더클래식</a> S반에서 심화 사고력 수학을, <a href="https://acaroad.com/12" target="_blank" rel="noopener noreferrer">아카로드 블루 다이아몬드</a>에서 중등 심화 기하와 고등수학 대수를 공부했습니다. 초등학교 4학년부터 PEAKS Academy에서 <a href="https://www.kmo.or.kr/" target="_blank" rel="noopener noreferrer">KMO</a>를 1년간 준비하고 시험에 응시했습니다.</p></div>
+            </article>
+            <article>
+              <h3><span data-en>Korean Language &amp; Literacy</span><span data-ko>국어와 문해력</span></h3>
+              <div data-en><p>Since third grade, I have steadily studied reading comprehension and structured writing at <a href="https://www.kiparang.co.kr/" target="_blank" rel="noopener noreferrer">Kiparang Literacy Academy</a>. This work supports how I read source materials, identify evidence, and explain my ideas in research reports.</p></div>
+              <div data-ko><p>초등학교 3학년부터 <a href="https://www.kiparang.co.kr/" target="_blank" rel="noopener noreferrer">기파랑문해원</a>에서 독해와 문해 학습을 꾸준히 이어오고 있습니다. 이러한 학습은 자료를 읽고 근거를 찾으며 탐구보고서에서 생각을 설명하는 기초가 되고 있습니다.</p></div>
+            </article>
+          </div>
         </section>
 
         <section class="andy-section">
@@ -39,7 +64,7 @@ layout: compress
           <div class="andy-research-list">
           {% for item in research_items %}
             <article id="{{ item.title | slugify }}" class="andy-research-row{% unless item.image %} andy-research-row--text{% endunless %}">
-              {% if item.image %}<a class="andy-research-thumb" href="{{ item.url | relative_url }}"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}"></a>{% endif %}
+              {% if item.image %}<a class="andy-research-thumb{% if item.image_2 %} andy-research-thumb--pair{% endif %}" href="{{ item.url | relative_url }}"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}{% if item.image_2 %} — start and level screens{% endif %}">{% if item.image_2 %}<img src="{{ item.image_2 | relative_url }}" alt="{{ item.title }} — question and solution screens">{% endif %}</a>{% endif %}
               <div><p class="andy-work-meta"><span data-en>{{ item.category }}</span><span data-ko>{{ item.category_ko | default: item.category }}</span> · {{ item.date | date: "%Y" }}</p><h3><span data-en>{{ item.title }}</span><span data-ko>{{ item.title_ko | default: item.title }}</span></h3><p><span data-en>{{ item.summary }}</span><span data-ko>{{ item.summary_ko | default: item.summary }}</span></p><p class="andy-research-links"><a data-en href="{{ item.url | relative_url }}">Details</a><a data-ko href="{{ item.permalink_ko | default: item.url | relative_url }}">자세히 보기</a>{% if item.app_url %}<a href="{{ item.app_url }}" target="_blank" rel="noopener noreferrer"><span data-en>Try the App</span><span data-ko>앱 실행</span></a>{% endif %}{% if item.video %}<a href="{{ item.video }}"><span data-en>Video</span><span data-ko>영상</span></a>{% endif %}</p></div>
             </article>
           {% else %}<p>The first research record is in preparation.</p>{% endfor %}
@@ -77,17 +102,17 @@ layout: compress
           <div class="andy-records">{% for item in memory_items %}<article><h3>{{ item.title }}</h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }}</p></article>{% else %}<p>Meaningful performances, encounters, and moments will be added gradually.</p>{% endfor %}</div>
         </section>
 
-        <section id="gallery" class="andy-section andy-one-page-section andy-photo-strip">
+        <section id="gallery" class="andy-section andy-one-page-section andy-photo-strip andy-section--reserved" aria-hidden="true">
           <h2>Gallery</h2>
           <div><figure><img src="{{ '/images/andy-intel.jpeg' | relative_url }}" alt="Andy at Intel"><figcaption>Intel</figcaption></figure><figure><img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy at Google"><figcaption>Google</figcaption></figure><figure><img src="{{ '/images/andy-grand-canyon.jpeg' | relative_url }}" alt="Andy at the Grand Canyon"><figcaption>Grand Canyon</figcaption></figure></div>
         </section>
 
-        <section id="timeline" class="andy-section andy-one-page-section">
+        <section id="timeline" class="andy-section andy-one-page-section andy-section--reserved" aria-hidden="true">
           <h2>Timeline</h2>
           <div class="andy-inline-timeline"><article><time>2025 · Grade 4</time><h3>Trust Pink Badge</h3><p>Built an Arduino and E-Ink invention prototype and received a Silver Award from the Gangdong-Songpa District Office of Education.</p></article><article><time>2025 · Grade 4</time><h3>Software Gifted Education Program</h3><p>Studied at the Seoul National University of Education Software Gifted Education Program and completed the Exciting Math Quiz independent research project.</p></article><article><time>March-June 2026 · Grade 5</time><h3>AI School Promotion Film</h3><p>Created a generative AI promotional film with Veo 3, Nano Banana, and CapCut; passed the first review and received an Encouragement Award.</p></article><article><time>2026 · Grade 5</time><h3>The archive continues</h3><p>Begins organizing research, projects, activities, and memories as a long-term public record.</p></article></div>
         </section>
 
-        <section id="archive" class="andy-section andy-one-page-section">
+        <section id="archive" class="andy-section andy-one-page-section andy-section--reserved" aria-hidden="true">
           <h2>Archive</h2>
           {% assign all_items = site.research | concat: site.projects | concat: site.reading | concat: site.activities | concat: site.achievements | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
           <div class="andy-archive-list">{% for item in all_items %}<div><time>{{ item.date | date: "%Y.%m.%d" }}</time><strong>{{ item.title }}</strong><span>{% if item.collection == 'projects' %}Research{% else %}{{ item.collection | capitalize }}{% endif %}</span></div>{% endfor %}</div>

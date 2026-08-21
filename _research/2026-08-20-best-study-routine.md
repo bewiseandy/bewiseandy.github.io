@@ -9,7 +9,7 @@ summary: "Inspired by baseball players' batting routines, I am building an AI ag
 summary_ko: "야구선수의 타격 루틴에서 출발해, 한 달간 공부 전 행동과 실제 집중시간을 기록하고 나에게 맞는 루틴을 찾는 AI 에이전트 탐구입니다."
 tags: [routine, focus, data log]
 featured: true
-image: "/images/projects/best-study-routine/app-preview.png"
+image: "/images/projects/best-study-routine/thumbnail-routine-options.png"
 permalink: /research/best-study-routine/
 permalink_ko: /ko/research/best-study-routine/
 alternate_url: /ko/research/best-study-routine/

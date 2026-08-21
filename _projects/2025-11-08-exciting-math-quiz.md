@@ -10,7 +10,8 @@ summary_ko: "학년별 문제 선택과 즉각적인 풀이 피드백이 수학 
 tags: [Entry, Mathematics Education, User Testing]
 featured: true
 program: "Seoul National University of Education Software Gifted Education Program"
-image: "/images/projects/exciting-math-quiz/math-helper-thumbnail.png"
+image: "/images/projects/exciting-math-quiz/thumbnail-start-levels.png"
+image_2: "/images/projects/exciting-math-quiz/thumbnail-question-solution.png"
 permalink: /research/exciting-math-quiz/
 permalink_ko: /ko/research/exciting-math-quiz/
 alternate_url: /ko/research/exciting-math-quiz/
