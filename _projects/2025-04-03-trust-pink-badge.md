@@ -6,6 +6,8 @@ summary: "An Arduino and E-Ink prototype designed to show a pregnancy support ba
 tags: [E-Ink, Arduino, Human-Centered Design]
 featured: true
 award: "Silver Award, Gangdong-Songpa District Office of Education"
+image: "/images/projects/trust-pink-badge/research-journal-page-1.png"
+permalink: /research/trust-pink-badge/
 ---
 
 <p class="project-lead">I designed a prototype pregnancy support badge that uses an E-Ink display to show whether the badge is within its valid period. The project began with a question about how technology could support pregnant passengers while reducing doubt and misuse surrounding conventional badges.</p>
@@ -73,4 +75,3 @@ This project taught me that an invention should consider not only whether a tech
 The prototype demonstrated its concept using a ten-second software timer rather than a real calendar date. A practical version would need secure activation, accurate date management, protection against unauthorized reset, a smaller and lighter enclosure, and testing with intended users. It would also require careful consideration of privacy and the administrative process for issuing and renewing a badge.
 
 <aside class="project-award"><span>Recognition</span><strong>Silver Award</strong><p>Gangdong-Songpa District Office of Education · 2025</p></aside>
-

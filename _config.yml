@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "ko-KR"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Andy SeoJun Park"
+title                    : "Andy Park"
 title_separator          : "-"
 name                     : &name "Andy SeoJun Park"
 description              : &description "Student explorer in mathematics, science, computing, music, and the questions found in everyday life."

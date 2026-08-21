@@ -6,6 +6,8 @@ summary: "An Entry-based quiz application exploring whether level-appropriate qu
 tags: [Entry, Mathematics Education, User Testing]
 featured: true
 program: "Seoul National University of Education Software Gifted Education Program"
+image: "/images/projects/exciting-math-quiz/interface-and-levels.png"
+permalink: /research/exciting-math-quiz/
 ---
 
 <p class="project-lead">I built a level-based mathematics quiz application with Entry to explore a simple question: can practice feel more approachable when learners choose an appropriate level, receive a score, and see an explanation immediately?</p>
@@ -54,4 +56,3 @@ The prototype contained too few questions to support repeated practice. Particip
 The next version could select new questions based on each learner's results and provide a more systematic way to study the relationship between engagement and learning.
 
 <aside class="project-award"><span>Submitted to</span><strong>Software Gifted Education Program</strong><p>Seoul National University of Education · Independent Research Report · 2025</p></aside>
-

@@ -7,6 +7,8 @@ tags: [Veo 3, Nano Banana, CapCut, Storytelling]
 featured: true
 award: "Encouragement Award"
 video: "https://www.youtube.com/watch?v=jvgOLHUsMw4"
+image: "/images/projects/ai-school-promo/cover.png"
+permalink: /research/ai-school-promotion-film/
 ---
 
 <p class="project-lead">I created an AI-assisted promotional film for Seoul Myogok Elementary School, developing the concept, storyboard, prompts, generated scenes, and final edit. The film presents school life as a journey from a small seed to learning, challenge, and strong growth.</p>
@@ -62,4 +64,3 @@ For a future version, I would work with classmates, plan character and visual co
 <figure class="project-figure project-figure--wide"><img src="{{ '/images/projects/ai-school-promo/message-and-reflection.png' | relative_url }}" alt="Final message and reflection from the school promotion film project"><figcaption>The final message connects learning, growth, challenge, and a shared future.</figcaption></figure>
 
 <aside class="project-award"><span>Recognition</span><strong>Encouragement Award</strong><p>8th Education Public Data AI Competition · 2026</p></aside>
-
