@@ -14,8 +14,13 @@ layout: compress
 
         <section id="about" class="andy-section">
           <h2><span data-en>About</span><span data-ko>소개</span></h2>
-          <div data-en><p>I am a student who enjoys mathematics, science, and computing, and who likes turning questions from everyday life into things I can observe, test, and understand.</p><p>This site is a growing record of how I think. I document not only finished results, but also where a question began, what I tried, what changed my mind, and what I would like to investigate next. I am currently in fifth grade, and I hope this archive will continue to grow through university and beyond.</p><p>Beyond mathematics, science, and code, I also keep selected records of piano, photography, video, travel, and meaningful encounters. I am interested in finding unexpected connections between experiences that may initially seem unrelated.</p></div>
+          <div data-en><p>I am a student who enjoys mathematics, science, and computing, and who likes turning questions from everyday life into things I can observe, test, and understand.</p><p>This site is a growing record of how I think. I document not only finished results, but also where a question began, what I tried, what changed my mind, and what I would like to investigate next. I am currently in fifth grade, and I hope this archive will continue to grow through university and beyond.</p><p>Beyond mathematics, science, and code, I also keep records of piano, photography, video, travel, and meaningful encounters. I am interested in finding unexpected connections between experiences that may initially seem unrelated.</p></div>
           <div data-ko><p>저는 수학, 과학, 컴퓨팅을 좋아하며 일상에서 발견한 질문을 직접 관찰하고 시험하며 이해하는 학생입니다.</p><p>이 사이트는 제가 어떻게 생각하고 성장하는지를 기록하는 공간입니다. 완성된 결과뿐 아니라 질문의 시작, 시도한 방법, 생각이 바뀐 순간과 다음 탐구도 함께 남깁니다.</p><p>피아노, 사진, 영상, 여행과 소중한 만남도 선별하여 기록하며 서로 달라 보이는 경험 사이의 새로운 연결을 찾고 있습니다.</p></div>
+        </section>
+
+        <section id="education" class="andy-section andy-one-page-section">
+          <h2>Education & Programs</h2>
+          <div class="andy-education-item"><time>2025</time><div><h3>Seoul National University of Education</h3><p>Software Gifted Education Program</p><p class="andy-meta">Completed independent software study and developed the Exciting Math Quiz project while enrolled in the program.</p></div></div>
         </section>
 
         <section class="andy-section">
@@ -28,27 +33,62 @@ layout: compress
           </ul>
         </section>
 
-        <section class="andy-section">
-          <h2>Selected Research & Projects</h2>
-          {% assign featured = site.research | concat: site.projects | where: "featured", true | sort: "date" | reverse %}
-          <div class="andy-records">
-            {% for item in featured limit: 5 %}
-              <article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.category }} · {{ item.date | date: "%Y" }}{% if item.tags %} · {{ item.tags | join: ", " }}{% endif %}</p></article>
-            {% else %}<p>The first research record is in preparation.</p>{% endfor %}
-          </div>
+        <section id="research" class="andy-section andy-one-page-section">
+          <h2>Research</h2>
+          {% assign research_items = site.research | sort: "date" | reverse %}
+          {% for item in research_items %}
+            <article id="{{ item.title | slugify }}" class="andy-work">
+              <p class="andy-work-meta">{{ item.category }} · {{ item.date | date: "%Y" }}</p>
+              <h3>{{ item.title }}</h3><p class="andy-work-summary">{{ item.summary }}</p>
+              <div class="andy-work-body">{{ item.content }}</div>
+            </article>
+          {% else %}<p>The first research record is in preparation.</p>{% endfor %}
         </section>
 
-        <section class="andy-section">
-          <h2>Recent Notes</h2>
-          {% assign recent = site.activities | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
-          <div class="andy-records">
-            {% for item in recent limit: 5 %}<article><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }} · {{ item.collection }}</p></article>{% else %}<p>Activities, photographs, and memories will appear here in chronological order.</p>{% endfor %}
-          </div>
+        <section id="projects" class="andy-section andy-one-page-section">
+          <h2>Projects</h2>
+          {% assign project_items = site.projects | sort: "date" | reverse %}
+          {% for item in project_items %}
+            <article id="{{ item.title | slugify }}" class="andy-work">
+              <p class="andy-work-meta">{{ item.category }} · {{ item.date | date: "%Y" }}</p>
+              <h3>{{ item.title }}</h3><p class="andy-work-summary">{{ item.summary }}</p>
+              <div class="andy-work-body">{{ item.content }}</div>
+            </article>
+          {% else %}<p>The first project is in preparation.</p>{% endfor %}
         </section>
 
-        <section class="andy-section andy-photo-strip">
-          <h2>Places that sparked curiosity</h2>
-          <div><img src="{{ '/images/andy-intel.jpeg' | relative_url }}" alt="Andy at Intel"><img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy at Google"><img src="{{ '/images/andy-grand-canyon.jpeg' | relative_url }}" alt="Andy at the Grand Canyon"></div>
+        <section id="achievements" class="andy-section andy-one-page-section">
+          <h2>Achievements</h2>
+          {% assign achievement_items = site.achievements | sort: "date" | reverse %}
+          <div class="andy-records">{% for item in achievement_items %}<article><h3>{{ item.title }}</h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.category }} · {{ item.date | date: "%Y" }}</p></article>{% else %}<p>Achievements will be documented with their context and supporting evidence.</p>{% endfor %}</div>
+        </section>
+
+        <section id="activity-log" class="andy-section andy-one-page-section">
+          <h2>Activity Log</h2>
+          {% assign activity_items = site.activities | sort: "date" | reverse %}
+          <div class="andy-records">{% for item in activity_items %}<article><h3>{{ item.title }}</h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }}</p></article>{% else %}<p>Study, reading, practice, and observation notes will appear here.</p>{% endfor %}</div>
+        </section>
+
+        <section id="memories" class="andy-section andy-one-page-section">
+          <h2>Memories</h2>
+          {% assign memory_items = site.memories | sort: "date" | reverse %}
+          <div class="andy-records">{% for item in memory_items %}<article><h3>{{ item.title }}</h3><p>{{ item.summary }}</p><p class="andy-meta">{{ item.date | date: "%Y.%m.%d" }}</p></article>{% else %}<p>Meaningful performances, encounters, and moments will be added gradually.</p>{% endfor %}</div>
+        </section>
+
+        <section id="gallery" class="andy-section andy-one-page-section andy-photo-strip">
+          <h2>Gallery</h2>
+          <div><figure><img src="{{ '/images/andy-intel.jpeg' | relative_url }}" alt="Andy at Intel"><figcaption>Intel</figcaption></figure><figure><img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy at Google"><figcaption>Google</figcaption></figure><figure><img src="{{ '/images/andy-grand-canyon.jpeg' | relative_url }}" alt="Andy at the Grand Canyon"><figcaption>Grand Canyon</figcaption></figure></div>
+        </section>
+
+        <section id="timeline" class="andy-section andy-one-page-section">
+          <h2>Timeline</h2>
+          <div class="andy-inline-timeline"><article><time>2025 · Grade 4</time><h3>Trust Pink Badge</h3><p>Built an Arduino and E-Ink invention prototype and received a Silver Award from the Gangdong-Songpa District Office of Education.</p></article><article><time>2025 · Grade 4</time><h3>Software Gifted Education Program</h3><p>Studied at the Seoul National University of Education Software Gifted Education Program and completed the Exciting Math Quiz independent research project.</p></article><article><time>March-June 2026 · Grade 5</time><h3>AI School Promotion Film</h3><p>Created a generative AI promotional film with Veo 3, Nano Banana, and CapCut; passed the first review and received an Encouragement Award.</p></article><article><time>2026 · Grade 5</time><h3>The archive continues</h3><p>Begins organizing research, projects, activities, and memories as a long-term public record.</p></article></div>
+        </section>
+
+        <section id="archive" class="andy-section andy-one-page-section">
+          <h2>Archive</h2>
+          {% assign all_items = site.research | concat: site.projects | concat: site.activities | concat: site.achievements | concat: site.memories | concat: site.gallery | sort: "date" | reverse %}
+          <div class="andy-archive-list">{% for item in all_items %}<div><time>{{ item.date | date: "%Y.%m.%d" }}</time><strong>{{ item.title }}</strong><span>{{ item.collection | capitalize }}</span></div>{% endfor %}</div>
         </section>
         <footer class="andy-footer">© Andy SeoJun Park · Built as a growing record of curiosity.</footer>
       </main>

@@ -12,6 +12,11 @@
   document.addEventListener('click', function (event) {
     var button = event.target.closest('[data-set-lang]');
     if (button) applyLanguage(button.getAttribute('data-set-lang'));
+    var menuLink = event.target.closest('.andy-drawer a');
+    if (menuLink) {
+      var menuToggle = document.getElementById('andy-menu-toggle');
+      if (menuToggle) menuToggle.checked = false;
+    }
   });
   applyLanguage(selected);
 }());

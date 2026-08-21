@@ -3,7 +3,7 @@
   <a class="andy-topbar-name" href="{{ '/' | relative_url }}">Andy SeoJun Park</a>
   <div class="andy-language" aria-label="Language"><button type="button" data-set-lang="en">EN</button><span>/</span><button type="button" data-set-lang="ko">KR</button></div>
   <nav class="andy-desktop-nav" aria-label="Main navigation">
-    <a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a>
+    <a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/' | relative_url }}#education">Education</a><a href="{{ '/' | relative_url }}#research">Research</a><a href="{{ '/' | relative_url }}#projects">Projects</a><a href="{{ '/' | relative_url }}#achievements">Achievements</a><a href="{{ '/' | relative_url }}#gallery">Gallery</a><a href="{{ '/' | relative_url }}#timeline">Timeline</a><a href="{{ '/' | relative_url }}#archive">Archive</a>
   </nav>
   <label class="andy-menu-button" for="andy-menu-toggle" aria-label="Open menu"><span>☰</span></label>
 </header>
@@ -13,6 +13,9 @@
   <img src="{{ '/images/andy-google.jpeg' | relative_url }}" alt="Andy SeoJun Park">
   <h1>Andy SeoJun Park</h1>
   <p><span data-en>Mathematics, Science,<br>Computing, and Curiosity</span><span data-ko>수학, 과학, 컴퓨팅과 호기심</span></p>
-  <nav><a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/activity-log/' | relative_url }}">Activity Log</a><a href="{{ '/projects/' | relative_url }}">Projects</a><a href="{{ '/achievements/' | relative_url }}">Achievements</a><a href="{{ '/memories/' | relative_url }}">Memories</a><a href="{{ '/gallery/' | relative_url }}">Gallery</a><a href="{{ '/timeline/' | relative_url }}">Timeline</a><a href="{{ '/archive/' | relative_url }}">Archive</a></nav>
-  <div class="andy-drawer-links"><a href="https://github.com/bewiseandy">GitHub</a></div>
+  <nav><a href="{{ '/' | relative_url }}#about">About</a><a href="{{ '/' | relative_url }}#education">Education & Programs</a><a href="{{ '/' | relative_url }}#research">Research</a><a href="{{ '/' | relative_url }}#activity-log">Activity Log</a><a href="{{ '/' | relative_url }}#projects">Projects</a><a href="{{ '/' | relative_url }}#achievements">Achievements</a><a href="{{ '/' | relative_url }}#memories">Memories</a><a href="{{ '/' | relative_url }}#gallery">Gallery</a><a href="{{ '/' | relative_url }}#timeline">Timeline</a><a href="{{ '/' | relative_url }}#archive">Archive</a></nav>
+  <div class="andy-drawer-links">
+    {% if site.author.email %}<a class="andy-contact-link" href="mailto:{{ site.author.email }}" aria-label="Send email"><span aria-hidden="true">&#9993;</span><span>Email</span></a>{% endif %}
+    <a class="andy-contact-link" href="https://github.com/bewiseandy" aria-label="Visit GitHub"><span aria-hidden="true">GH</span><span>GitHub</span></a>
+  </div>
 </aside>
